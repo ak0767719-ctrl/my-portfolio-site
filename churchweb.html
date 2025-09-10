@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bethesda Healing and Deliverance Ministry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white font-bold text-lg">✝</span>
+                        </div>
+                        <span class="font-bold text-xl text-gray-800">BETHESDA</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 font-medium">Home</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 font-medium">About</a>
+                    <a href="#services" class="text-gray-700 hover:text-purple-600 font-medium">Services</a>
+                    <a href="#videos" class="text-gray-700 hover:text-purple-600 font-medium">Videos</a>
+                    <a href="#events" class="text-gray-700 hover:text-purple-600 font-medium">Events</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-purple-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#home" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Home</a>
+                <a href="#about" class="block px-3 py-2 text-gray-700 hover:text-purple-600">About</a>
+                <a href="#services" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Services</a>
+                <a href="#videos" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Videos</a>
+                <a href="#events" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Events</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-700 hover:text-purple-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg text-white pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    BETHESDA HEALING AND<br>DELIVERANCE MINISTRY
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">
+                    "He heals the brokenhearted and binds up their wounds" - Psalm 147:3
+                </p>
+                <div class="space-x-4">
+                    <button class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">
+                        Join Us Sunday
+                    </button>
+                    <button class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition duration-300">
+                        Watch Online
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About Our Ministry</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We are a community dedicated to healing, deliverance, and spiritual growth through the power of Jesus Christ.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-lg">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">🙏</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Healing Ministry</h3>
+                    <p class="text-gray-600">Experiencing God's healing power through prayer, faith, and divine intervention.</p>
+                </div>
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-lg">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">⛓️‍💥</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Deliverance</h3>
+                    <p class="text-gray-600">Breaking chains and setting captives free through the authority of Christ.</p>
+                </div>
+                <div class="text-center card-hover bg-gray-50 p-8 rounded-lg">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-white text-2xl">❤️</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Community</h3>
+                    <p class="text-gray-600">Building a loving family where everyone belongs and grows together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Service Times</h2>
+                <p class="text-xl text-gray-600">Join us for worship and fellowship</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-600">Sunday Worship</h3>
+                    <p class="text-gray-600 mb-2"><strong>Time:</strong> 8:00 AM - 12:00 PM</p>
+                    <p class="text-gray-600 mb-4">Main worship service with praise, worship, and powerful preaching.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-600">Thursday Prayer</h3>
+                    <p class="text-gray-600 mb-2"><strong>Time:</strong> 9:00 AM - 12:00 PM</p>
+                    <p class="text-gray-600 mb-4">Midweek prayer meeting for healing and deliverance.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg card-hover">
+                    <h3 class="text-2xl font-semibold mb-4 text-purple-600">Friday Fire Night</h3>
+                    <p class="text-gray-600 mb-2"><strong>Time:</strong> 10:00 PM - 4:00 AM</p>
+                    <p class="text-gray-600 mb-4">Special revival service with signs, wonders, and miracles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section id="videos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Ministry Videos</h2>
+                <p class="text-xl text-gray-600 mb-8">Watch our latest sermons and testimonies</p>
+                
+                <!-- Admin Upload Section -->
+                <div class="bg-purple-50 p-6 rounded-lg mb-12 border-2 border-dashed border-purple-300">
+                    <h3 class="text-xl font-semibold text-purple-800 mb-4">📹 Upload New Video (Admin)</h3>
+                    <div class="space-y-4">
+                        <input type="text" id="video-title" placeholder="Video Title" class="w-full p-3 border rounded-lg">
+                        <textarea id="video-description" placeholder="Video Description" rows="3" class="w-full p-3 border rounded-lg"></textarea>
+                        <input type="url" id="video-url" placeholder="Video URL (YouTube, Vimeo, etc.)" class="w-full p-3 border rounded-lg">
+                        <button onclick="addVideo()" class="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition duration-300">
+                            Add Video
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Videos Grid -->
+            <div id="videos-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sample Videos -->
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg card-hover cursor-pointer" onclick="showVideoCategory('sunday-service')">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">▶️</div>
+                            <p class="font-semibold">Sunday Service</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Sunday Services</h3>
+                        <p class="text-gray-600 text-sm mb-4">Watch our powerful Sunday worship services and messages.</p>
+                        <button class="text-purple-600 hover:text-purple-800 font-medium">View All →</button>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg card-hover cursor-pointer" onclick="showVideoCategory('testimony')">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">▶️</div>
+                            <p class="font-semibold">Testimony</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Testimonies</h3>
+                        <p class="text-gray-600 text-sm mb-4">Amazing testimonies of divine healing and restoration.</p>
+                        <button class="text-purple-600 hover:text-purple-800 font-medium">View All →</button>
+                    </div>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg overflow-hidden shadow-lg card-hover cursor-pointer" onclick="showVideoCategory('deliverance')">
+                    <div class="h-48 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">▶️</div>
+                            <p class="font-semibold">Prayer Meeting</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Deliverance Prayers</h3>
+                        <p class="text-gray-600 text-sm mb-4">Powerful deliverance sessions breaking chains and setting free.</p>
+                        <button class="text-purple-600 hover:text-purple-800 font-medium">View All →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Upcoming Events</h2>
+                <p class="text-xl text-gray-600 mb-8">Join us for special services and community events</p>
+                
+                <!-- Admin Upload Section -->
+                <div class="bg-blue-50 p-6 rounded-lg mb-12 border-2 border-dashed border-blue-300">
+                    <h3 class="text-xl font-semibold text-blue-800 mb-4">📅 Add New Event (Admin)</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" id="event-title" placeholder="Event Title" class="p-3 border rounded-lg">
+                        <input type="date" id="event-date" class="p-3 border rounded-lg">
+                        <input type="time" id="event-time" class="p-3 border rounded-lg">
+                        <input type="text" id="event-location" placeholder="Location" class="p-3 border rounded-lg">
+                        <textarea id="event-description" placeholder="Event Description" rows="3" class="md:col-span-2 p-3 border rounded-lg"></textarea>
+                        <button onclick="addEvent()" class="md:col-span-2 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300">
+                            Add Event
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Grid -->
+            <div id="events-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sample Events -->
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-purple-600">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <span class="text-purple-600 text-xl">🎉</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Healing Crusade</h3>
+                            <p class="text-gray-500 text-sm">December 15, 2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Join us for a powerful healing crusade with signs, wonders, and miracles.</p>
+                    <div class="text-sm text-gray-500">
+                        <p>📍 Main Sanctuary</p>
+                        <p>🕐 6:00 PM - 9:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-blue-600">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <span class="text-blue-600 text-xl">👨‍👩‍👧‍👦</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Family Conference</h3>
+                            <p class="text-gray-500 text-sm">December 22, 2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Building stronger families through biblical principles and divine wisdom.</p>
+                    <div class="text-sm text-gray-500">
+                        <p>📍 Fellowship Hall</p>
+                        <p>🕐 10:00 AM - 4:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-green-600">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <span class="text-green-600 text-xl">🎊</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold">New Year Revival</h3>
+                            <p class="text-gray-500 text-sm">January 1, 2025</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-4">Start the new year with breakthrough, blessing, and divine favor.</p>
+                    <div class="text-sm text-gray-500">
+                        <p>📍 Main Sanctuary</p>
+                        <p>🕐 11:00 PM - 1:00 AM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Category Pages (Hidden by default) -->
+    <div id="video-category-page" class="fixed inset-0 bg-white z-50 hidden overflow-y-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-8">
+                <div class="flex items-center">
+                    <button onclick="hideVideoCategory()" class="mr-4 p-2 hover:bg-gray-100 rounded-full">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <h1 id="category-title" class="text-3xl font-bold text-gray-800"></h1>
+                </div>
+                <button onclick="hideVideoCategory()" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Video Grid -->
+            <div id="category-videos-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Videos will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Contact Us</h2>
+                <p class="text-xl text-gray-600">We'd love to hear from you and pray with you</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Get in Touch</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-purple-600">📍</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Address</p>
+                                <p class="text-gray-600">20 Owolabi Bambgelu Street, Ori-okuta, Ikorodu, Lagos,
+                                Nigeria</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-purple-600">📞</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Phone</p>
+                                <p class="text-gray-600">+234-908-5086-919</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                <span class="text-purple-600">✉️</span>
+                            </div>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <p class="text-gray-600">info@bethesdaministry.org</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold mb-6">Send us a Message</h3>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600">
+                        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600"></textarea>
+                        <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white font-bold text-lg">✝</span>
+                        </div>
+                        <span class="font-bold text-xl">BETHESDA</span>
+                    </div>
+                    <p class="text-gray-300">Healing and Deliverance Ministry - Transforming lives through the power of Jesus Christ.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#about" class="hover:text-white">About Us</a></li>
+                        <li><a href="#services" class="hover:text-white">Services</a></li>
+                        <li><a href="#videos" class="hover:text-white">Videos</a></li>
+                        <li><a href="#events" class="hover:text-white">Events</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-lg mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <button class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700">
+                            <span class="text-white">f</span>
+                        </button>
+                        <button class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700">
+                            <span class="text-white">📺</span>
+                        </button>
+                        <button class="w-10 h-10 bg-purple-600 rounded-full flex items-center justify-center hover:bg-purple-700">
+                            <span class="text-white">📷</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+                <p>&copy; 2024 Bethesda Healing and Deliverance Ministry. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Video categories data
+        const videoCategories = {
+            'sunday-service': {
+                title: 'Sunday Services',
+                videos: [
+                    {
+                        title: 'The Power of Faith',
+                        description: 'Experience the miraculous power of faith in this powerful message.',
+                        date: 'December 8, 2024',
+                        url: 'https://example.com/video1'
+                    },
+                    {
+                        title: 'Walking in Divine Purpose',
+                        description: 'Discover God\'s purpose for your life and walk in divine destiny.',
+                        date: 'December 1, 2024',
+                        url: 'https://example.com/video2'
+                    },
+                    {
+                        title: 'Breakthrough Worship',
+                        description: 'A powerful worship service that brings breakthrough and victory.',
+                        date: 'November 24, 2024',
+                        url: 'https://example.com/video3'
+                    }
+                ]
+            },
+            'testimony': {
+                title: 'Testimonies',
+                videos: [
+                    {
+                        title: 'Healing from Cancer',
+                        description: 'Amazing testimony of divine healing from terminal cancer.',
+                        date: 'December 5, 2024',
+                        url: 'https://example.com/testimony1'
+                    },
+                    {
+                        title: 'Financial Breakthrough',
+                        description: 'How God turned poverty into abundance through faith.',
+                        date: 'November 28, 2024',
+                        url: 'https://example.com/testimony2'
+                    },
+                    {
+                        title: 'Marriage Restoration',
+                        description: 'Testimony of how God restored a broken marriage.',
+                        date: 'November 21, 2024',
+                        url: 'https://example.com/testimony3'
+                    }
+                ]
+            },
+            'deliverance': {
+                title: 'Deliverance Prayers',
+                videos: [
+                    {
+                        title: 'Breaking Generational Curses',
+                        description: 'Powerful prayer session breaking generational bondages.',
+                        date: 'December 4, 2024',
+                        url: 'https://example.com/deliverance1'
+                    },
+                    {
+                        title: 'Freedom from Addiction',
+                        description: 'Deliverance prayer for those struggling with addictions.',
+                        date: 'November 27, 2024',
+                        url: 'https://example.com/deliverance2'
+                    },
+                    {
+                        title: 'Spiritual Warfare Prayer',
+                        description: 'Intense spiritual warfare session against demonic forces.',
+                        date: 'November 20, 2024',
+                        url: 'https://example.com/deliverance3'
+                    }
+                ]
+            }
+        };
+
+        // Show video category page
+        function showVideoCategory(category) {
+            const categoryData = videoCategories[category];
+            if (!categoryData) return;
+
+            document.getElementById('category-title').textContent = categoryData.title;
+            const videosGrid = document.getElementById('category-videos-grid');
+            
+            videosGrid.innerHTML = '';
+            
+            categoryData.videos.forEach(video => {
+                const videoCard = document.createElement('div');
+                videoCard.className = 'bg-white rounded-lg shadow-lg card-hover border';
+                
+                videoCard.innerHTML = `
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center rounded-t-lg">
+                        <div class="text-center text-white">
+                            <div class="text-4xl mb-2">▶️</div>
+                            <p class="font-semibold">Play Video</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">${video.title}</h3>
+                        <p class="text-gray-600 text-sm mb-2">${video.description}</p>
+                        <p class="text-gray-500 text-xs mb-4">📅 ${video.date}</p>
+                        <button onclick="window.open('${video.url}', '_blank')" class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition duration-300">
+                            Watch Now
+                        </button>
+                    </div>
+                `;
+                
+                videosGrid.appendChild(videoCard);
+            });
+
+            document.getElementById('video-category-page').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Hide video category page
+        function hideVideoCategory() {
+            document.getElementById('video-category-page').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Video upload functionality
+        function addVideo() {
+            const title = document.getElementById('video-title').value;
+            const description = document.getElementById('video-description').value;
+            const url = document.getElementById('video-url').value;
+
+            if (!title || !description || !url) {
+                alert('Please fill in all video fields');
+                return;
+            }
+
+            const videosGrid = document.getElementById('videos-grid');
+            const videoCard = document.createElement('div');
+            videoCard.className = 'bg-gray-100 rounded-lg overflow-hidden shadow-lg card-hover';
+            
+            videoCard.innerHTML = `
+                <div class="h-48 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+                    <div class="text-center text-white">
+                        <div class="text-4xl mb-2">▶️</div>
+                        <p class="font-semibold">New Video</p>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">${title}</h3>
+                    <p class="text-gray-600 text-sm mb-4">${description}</p>
+                    <button onclick="window.open('${url}', '_blank')" class="text-purple-600 hover:text-purple-800 font-medium">Watch Now →</button>
+                </div>
+            `;
+
+            videosGrid.appendChild(videoCard);
+
+            // Clear form
+            document.getElementById('video-title').value = '';
+            document.getElementById('video-description').value = '';
+            document.getElementById('video-url').value = '';
+
+            alert('Video added successfully!');
+        }
+
+        // Event upload functionality
+        function addEvent() {
+            const title = document.getElementById('event-title').value;
+            const date = document.getElementById('event-date').value;
+            const time = document.getElementById('event-time').value;
+            const location = document.getElementById('event-location').value;
+            const description = document.getElementById('event-description').value;
+
+            if (!title || !date || !time || !location || !description) {
+                alert('Please fill in all event fields');
+                return;
+            }
+
+            const eventsGrid = document.getElementById('events-grid');
+            const eventCard = document.createElement('div');
+            eventCard.className = 'bg-white p-6 rounded-lg shadow-lg card-hover border-l-4 border-orange-600';
+            
+            const eventDate = new Date(date);
+            const formattedDate = eventDate.toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+
+            eventCard.innerHTML = `
+                <div class="flex items-center mb-4">
+                    <div class="bg-orange-100 p-3 rounded-full mr-4">
+                        <span class="text-orange-600 text-xl">📅</span>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">${title}</h3>
+                        <p class="text-gray-500 text-sm">${formattedDate}</p>
+                    </div>
+                </div>
+                <p class="text-gray-600 mb-4">${description}</p>
+                <div class="text-sm text-gray-500">
+                    <p>📍 ${location}</p>
+                    <p>🕐 ${time}</p>
+                </div>
+            `;
+
+            eventsGrid.appendChild(eventCard);
+
+            // Clear form
+            document.getElementById('event-title').value = '';
+            document.getElementById('event-date').value = '';
+            document.getElementById('event-time').value = '';
+            document.getElementById('event-location').value = '';
+            document.getElementById('event-description').value = '';
+
+            alert('Event added successfully!');
+        }
+
+        // Contact form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            this.reset();
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'976e628c31b3d0aa',t:'MTc1NjQ5NTAwOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
